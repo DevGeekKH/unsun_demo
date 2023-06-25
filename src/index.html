@@ -6,6 +6,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
     </style>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <title>Casino Online</title>
 </head>
 <body class="min-vh-100">
@@ -451,8 +457,70 @@
             </div>
         </div>
     </section>
+    <section class="section">
+        <h2 class="title">แบรนด์ชั้นนำ : มาตรฐานโลก</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="img/cs/AFB-1-150x150.png" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/CQ9.png.webp" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/dream-150x150.png" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/Evolution.png.webp" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/Green-Dragon-150x150.png" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/JILI.png.webp" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/Joker-gaming.png.webp" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/logo-miki-150x150.png" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/playstar.png.webp" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/pp.png.webp" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/sa-gaming-150x150.png" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/sexy-baccarat-150x150.png" alt="AFB" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cs/SV388-150x150.png" alt="AFB" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <script type="module" src="./js/main.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 8,
+        centeredSlides: false,
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+    });
+</script>
 </body>
 </html>

@@ -1,0 +1,180 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/variables";
+$bd-violet: #F56906;
+
+:root {
+  --bg-primary: #F56906;
+  --color-primary: #F56906;
+  --color-white: #f5f5f5;
+  --bd-violet: #F56906;
+  --color-grey-800: 12 17 27;
+  --tw-bg-opacity: 1;
+}
+
+body {
+  background-color: #111827 !important;
+  background-image: url("../img/bg.gif");
+  background-position: center center !important;
+  background-size: contain;
+  font-family: 'Kanit', sans-serif;
+}
+#header {
+  padding: 10px 0 !important;
+}
+
+.menu {
+  background: var(--bg-primary) !important;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.menu a {
+  color: #f5f5f5 !important;
+}
+.btn-main-color {
+  background-color: var(--bg-primary);
+}
+.btn-rounded {
+  border-radius: 30px !important;
+  font-weight: 300;
+}
+
+.btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bg-primary) !important;
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+  --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+  --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  --bs-btn-border-color: orange !important;
+}
+
+.btn-login-register a{
+  font-size: 1rem !important;
+  padding: 10px 20px;
+}
+h2, h3, h4, p {
+  color: var(--color-white);
+}
+h2.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  color: var(--color-primary);
+  font-size: 16px !important;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.bg-round {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  color: #111827;
+  border-radius: 20px;
+  border: 1px solid orange !important;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) -30%, rgba(245,105,6,1) 100%);
+  margin-bottom: 10px;
+}
+
+.banking-support {
+  text-align: center;
+}
+
+.rate-box {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255, 0.5);
+  box-shadow: 0 5px 11px 0 rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  min-height: 350px;
+  min-width: 350px;
+  margin-top: 100px;
+}
+
+.black-box {
+  background-color: rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 11px 0 rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  min-height: 450px;
+  min-width: 350px;
+}
+
+.img-overlay {
+  margin-top: 30px;
+  min-width: 350px;
+  min-height: 350px;
+  background: url("../img/4mcy.webp") center;
+  background-size: contain;
+}
+.black-box:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 11px 0 rgba(255, 255, 255, 0.2);
+}
+
+.box-white {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255, 0.5);
+  box-shadow: 0 5px 11px 0 rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.card-box {
+  padding: 15px;
+  border-radius: 15px;
+  //box-shadow: inset 0 -3em 3em rgba(0,0,0,0.2),
+  //0 0  0 1px rgb(245,245,245),
+  //0.3em 0.3em 1em rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255, 0.5);
+  box-shadow: 0 5px 11px 0 rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.link-primary {
+  color: var(--color-white) !important;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.link-primary:hover {
+  color: var(--color-white) !important;
+}
+
+.promotion, .free-to-play, .other-games, .customer-rating {
+  margin-top: 50px;
+}
+
+.link-promotion {
+  color: var(--color-white) !important;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
